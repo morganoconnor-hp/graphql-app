@@ -1,0 +1,18 @@
+Query:
+    type: object
+    config:
+        fields:
+            Todo:
+                type: 'Todo'
+                args:
+                    id:
+                        description: 'Resolve Todo using its id.'
+                        type: 'Int!'
+                resolve: "@=resolver('Todo', [args['id']])"
+            Priority:
+                type: 'Priority'
+                args:
+                    id:
+                        description: 'Resolve Priority using its id.'
+                        type: 'Int!'
+                resolve: "@=resolver('Priority', [args['id']])"

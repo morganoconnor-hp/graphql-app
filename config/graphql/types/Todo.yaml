@@ -1,0 +1,14 @@
+Todo:
+    type: object
+    config:
+        fields:
+            id:
+                type: 'Int!'
+            title:
+                type: 'String!'
+            deadline:
+                type: 'String!'
+            description:
+                type: 'String!'
+            priority:
+                type: 'Priority'

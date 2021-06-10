@@ -1,0 +1,8 @@
+Priority:
+    type: object
+    config:
+        fields:
+            id:
+                type: 'Int!'
+            grade:
+                type: 'String!'

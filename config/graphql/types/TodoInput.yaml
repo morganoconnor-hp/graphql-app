@@ -1,0 +1,10 @@
+TodoInput:
+    type: input-object
+    config:
+        fields:
+            title:
+                type: 'String!'
+            deadline:
+                type: 'String!'
+            description:
+                type: 'String!'
