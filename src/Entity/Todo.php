@@ -38,6 +38,11 @@ class Todo
      */
     private $priority;
 
+    /**
+     * @ORM\Column(type="boolean")
+     */
+    private $isExecuted;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -87,6 +92,18 @@ class Todo
     public function setPriority(?Priority $priority): self
     {
         $this->priority = $priority;
+
+        return $this;
+    }
+
+    public function getIsExecuted(): ?bool
+    {
+        return $this->isExecuted;
+    }
+
+    public function setIsExecuted(bool $isExecuted): self
+    {
+        $this->isExecuted = $isExecuted;
 
         return $this;
     }

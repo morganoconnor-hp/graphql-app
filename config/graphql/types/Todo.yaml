@@ -12,3 +12,5 @@ Todo:
                 type: 'String!'
             priority:
                 type: 'Priority'
+            isExecuted:
+                type: 'Boolean'

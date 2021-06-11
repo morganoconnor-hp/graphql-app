@@ -16,3 +16,13 @@ Query:
                         description: 'Resolve Priority using its id.'
                         type: 'Int!'
                 resolve: "@=resolver('Priority', [args['id']])"
+            todo_list:
+                type: "TodoList"
+                args:
+                    limit:
+                        description: "limit"
+                        type: "Int"
+                    criteria:
+                        description: "criteria"
+                        type: "String"
+                resolve: "@=resolver('TodoList', [args])"

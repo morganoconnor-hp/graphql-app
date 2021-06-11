@@ -1,21 +1,3 @@
-#MutationSuccess:
-#    type: object
-#    config:
-#        fields:
-#            content:
-#                type: String!
-
-#Mutation:
-#    type: object
-#    config:
-#        fields:
-#            NewTodo:
-#                type: MutationSuccess
-#                resolve: "@=mutation('NewTodo', [args['input']['title']], [args['input']['deadline']], [args['input']['description']])"
-#                args:
-#                    input:
-#                        type: TodoInput!
-
 Mutation:
     type: "object"
     config:

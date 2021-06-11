@@ -29,20 +29,16 @@ final class TodoMutation implements MutationInterface, AliasedInterface
      */
     public function resolve(object $args): Todo
     {
-        dump('$args', $args);
-
         $priority = $this->priorityRepository
-            ->find($args['todo']['priority']);
-
-        dump('$priority', $priority);
+            ->find($args['todo']['priority'])
+        ;
 
         $todo = new Todo();
         $todo->setTitle($args['todo']['title']);
         $todo->setDeadline($args['todo']['deadline']);
         $todo->setDescription($args['todo']['description']);
         $todo->setPriority($priority);
-
-        dump('$todo', $todo);
+        $todo->setIsExecuted(false);
 
         $this->em->persist($todo);
         $this->em->flush();

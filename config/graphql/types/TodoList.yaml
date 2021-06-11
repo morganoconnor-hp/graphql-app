@@ -1,0 +1,9 @@
+TodoList:
+    type: object
+    config:
+        description: "A query to return list of Todos"
+        fields:
+            todos:
+                type: "[Todo]"
+                description: "Todo details"
+
