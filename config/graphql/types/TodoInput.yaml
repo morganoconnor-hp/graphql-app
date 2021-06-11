@@ -8,3 +8,5 @@ TodoInput:
                 type: 'String!'
             description:
                 type: 'String!'
+            priority:
+                type: 'Int!'

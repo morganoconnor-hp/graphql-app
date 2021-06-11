@@ -4,7 +4,7 @@
 #        fields:
 #            content:
 #                type: String!
-#
+
 #Mutation:
 #    type: object
 #    config:
@@ -25,8 +25,4 @@ Mutation:
                 args:
                     todo:
                         type: "TodoInput!"
-                resolve: "@=mutation('NewTodo',
-                            [args['input']['title']],
-                            [args['input']['deadline']],
-                            [args['input']['description']]
-                         )"
+                resolve: "@=mutation('NewTodo', [args])"
